@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongood": "^0.0.5",
     "mongoose": "^8.9.2"
