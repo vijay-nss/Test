@@ -1,0 +1,13 @@
+<div>
+  <h1>{{ title }}</h1>
+  <label for="dataInput">Enter Data for QR Code:</label>
+  <input
+    type="text"
+    id="dataInput"
+    [(ngModel)]="qrCodeData"
+    (ngModelChange)="generateQRCode(qrCodeData)"  
+    placeholder="Enter data for QR code"
+  />
+  <br /><br />
+  <canvas id="qr-code"></canvas> 
+</div>

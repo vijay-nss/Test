@@ -1,0 +1,12 @@
+<div class="pattern-lock-container">
+    <div class="grid" (mouseup)="onMouseUp()" (mouseleave)="onMouseUp()">
+      <div
+        *ngFor="let cell of grid; let i = index"
+        class="cell"
+        [class.active]="selectedCells.includes(i)"
+        (mousedown)="onMouseDown(i)"
+        (mouseenter)="onMouseEnter(i)"
+      ></div>
+    </div>
+  </div>
+  
